@@ -2,7 +2,7 @@ FROM node:15-alpine
 
 WORKDIR node-sonos-web-controller
 
-RUN git clone -q git clone https://github.com/jishi/node-sonos-web-controller.git .
+RUN git clone -q https://github.com/jishi/node-sonos-web-controller.git .
 
 RUN npm install > /dev/null
 
