@@ -1,17 +1,16 @@
 FROM node:15-alpine
 
-WORKDIR node-sonos-web-controller
+WORKDIR /app
 
-RUN apk --no-cache add git 
-  
-RUN git clone -q https://github.com/jishi/node-sonos-web-controller.git .
+RUN apk --no-cache add git
 
-RUN npm install > /dev/null
+RUN rm -rf /app/node-sonos-web-controller && git clone -q https://github.com/jishi/node-sonos-web-controller.git /app
 
-EXPOSE 8080
+RUN echo "{ \"port\": 8088, \"cacheDir\": \"./cache\" }" >> /app/settings.json 
+ 
+RUN npm install 
 
-HEALTHCHECK --interval=1m --timeout=2s \
-  CMD curl -LSs http://localhost:8080 || exit 1
+EXPOSE 8088
 
 CMD node server.js
 
