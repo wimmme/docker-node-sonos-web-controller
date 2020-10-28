@@ -6,13 +6,8 @@ Refer to https://github.com/jishi/node-sonos-web-controller for all the configur
 
 Then run the docker image:
 ```shell
-docker run \
-  --net=host \
-  --name sonos-web-controller \
-  --restart=always \
-  -d \
-  -v `pwd`/cache:/app/cache \
-  wimmme/docker-node-sonos-web-controller
+docker run --net=host --name sonos-web-controller --restart=always -d wimmme/docker-node-sonos-web-controller
 ```
+Use -p portnumberhost:8080 to remap the webinterface to anothe port on your host
 
 Important  is using the *host* networking interface so that it can discover your Sonos devices.
