@@ -9,8 +9,7 @@ Docker wrapper for https://github.com/jishi/node-sonos-web-controller
 [![Docker Pulls](https://img.shields.io/docker/pulls/wimmme/docker-node-sonos-web-controller.svg)](https://hub.docker.com/r/wimmme/docker-node-sonos-web-controller)
 [![Docker Automated buil](https://img.shields.io/docker/automated/wimmme/docker-node-sonos-web-controller.svg)](https://hub.docker.com/r/wimmme/docker-node-sonos-web-controller)
 [![Docker Build Statu](https://img.shields.io/docker/build/wimmme/docker-node-sonos-web-controller.svg)](https://hub.docker.com/r/wimmme/docker-node-sonos-web-controller)
-[![Docker Automated buil](https://img.shields.io/docker/automated/wimmme/docker-node-sonos-web-controller.svg)](https://hub.docker.com/r/wimmme/docker-node-sonos-web-controller)
-[![Docker Build Statu](https://img.shields.io/docker/build/wimmme/docker-node-sonos-web-controller.svg)](https://hub.docker.com/r/wimmme/docker-node-sonos-web-controller)
+
 
 ## Usage
 Refer to https://github.com/jishi/node-sonos-web-controller for all the configuration details
